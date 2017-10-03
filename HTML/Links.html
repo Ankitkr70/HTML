@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LINKS</title>
+</head>
+<body>
+<h1>BASIC SORTING</h1>
+<ul>
+    <li><a href="#bubble">BUBBLE SORT</a></li>
+    <li><a href="#insertion">INSERTION SORT</a></li>
+    <li><a href="#selection">SELECTION SORT</a></li>
+</ul>
+<h3 id="bubble">BUBBLE SORT</h3>
+<p>Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the
+    list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass
+    through the list is repeated until no swaps are needed, which indicates that the list is sorted. The algorithm,
+    which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list.
+    Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion
+    sort.[2] It can be practical if the input is usually in sorted order but may occasionally have some out-of-order
+    elements nearly in position.</p>
+<p>Bubble sort has worst-case and average complexity both О(n2), where n is the number of items being sorted. There
+    exist many sorting algorithms, such as merge sort with substantially better worst-case or average complexity of O(n
+    log n). Even other О(n2) sorting algorithms, such as insertion sort, tend to have better performance than bubble
+    sort. Therefore, bubble sort is not a practical sorting algorithm when n is large.
+    The only significant advantage that bubble sort has over most other implementations, even quicksort, but not
+    insertion sort, is that the ability to detect that the list is sorted efficiently is built into the algorithm. When
+    the list is already sorted (best-case), the complexity of bubble sort is only O(n). By contrast, most other
+    algorithms, even those with better average-case complexity, perform their entire sorting process on the set and thus
+    are more complex. However, not only does insertion sort have this mechanism too, but it also performs better on a
+    list that is substantially sorted (having a small number of inversions).
+    Bubble sort should be avoided in the case of large collections. It will not be efficient in the case of a
+    reverse-ordered collection.</p>
+
+<h3 id="insertion">INSERTION SORT</h3>
+<p>Insertion sort iterates, consuming one input element each repetition, and growing a sorted output list. At each
+    iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted
+    list, and inserts it there. It repeats until no input elements remain.
+
+    Sorting is typically done in-place, by iterating up the array, growing the sorted list behind it. At each
+    array-position, it checks the value there against the largest value in the sorted list (which happens to be next to
+    it, in the previous array-position checked). If larger, it leaves the element in place and moves to the next. If
+    smaller, it finds the correct position within the sorted list, shifts all the larger values up to make a space, and
+    inserts into that correct position.
+
+    The resulting array after k iterations has the property where the first k + 1 entries are sorted ("+1" because the
+    first entry is skipped). In each iteration the first remaining entry of the input is removed, and inserted into the
+    result at the correct position, thus extending the result:</p>
+<p>The best case input is an array that is already sorted. In this case insertion sort has a linear running time (i.e.,
+    O(n)). During each iteration, the first remaining element of the input is only compared with the right-most element
+    of the sorted subsection of the array.
+
+    The simplest worst case input is an array sorted in reverse order. The set of all worst case inputs consists of all
+    arrays where each element is the smallest or second-smallest of the elements before it. In these cases every
+    iteration of the inner loop will scan and shift the entire sorted subsection of the array before inserting the next
+    element. This gives insertion sort a quadratic running time (i.e., O(n2)).
+
+    The average case is also quadratic, which makes insertion sort impractical for sorting large arrays. However,
+    insertion sort is one of the fastest algorithms for sorting very small arrays, even faster than quicksort; indeed,
+    good quicksort implementations use insertion sort for arrays smaller than a certain threshold, also when arising as
+    subproblems; the exact threshold must be determined experimentally and depends on the machine, but is commonly
+    around ten.</p>
+
+<h3 id="selection">SELECTION SORT</h3>
+<p>In computer science, selection sort is a sorting algorithm, specifically an in-place comparison sort. It has O(n2)
+    time complexity, making it inefficient on large lists, and generally performs worse than the similar insertion sort.
+    Selection sort is noted for its simplicity, and it has performance advantages over more complicated algorithms in
+    certain situations, particularly where auxiliary memory is limited.
+
+    The algorithm divides the input list into two parts: the sublist of items already sorted, which is built up from
+    left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest
+    of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm
+    proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist,
+    exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist
+    boundaries one element to the right.</p>
+<a href="http://en.wikipedia.org" target="_blank">FOR REFERENCE</a>
+<a href="mailto:ankitkr70@gmail.com">MAIL ME</a>
+<a href="tel:9968527415">MAIL ME</a>
+
+</body>
+</html>
